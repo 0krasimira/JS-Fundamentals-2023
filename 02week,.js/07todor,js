@@ -1,0 +1,13 @@
+function requiredReading (pagesCount, pagesPerHour, days) {
+
+    let timeNeeded = pagesCount / pagesPerHour
+    
+
+    let hoursNeeded = timeNeeded / days
+    console.log(hoursNeeded)
+
+}
+
+requiredReading (432,
+    15 ,
+    4)
