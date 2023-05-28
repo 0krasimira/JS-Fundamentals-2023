@@ -6,6 +6,7 @@ function multiplicationTable (number, multiplier) {
         }
     
 
-}
+    }
+
 
 multiplicationTable (5)

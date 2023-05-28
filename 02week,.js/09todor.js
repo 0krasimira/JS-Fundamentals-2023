@@ -1,18 +1,23 @@
-function specialNumbers (num) {
-    
-    let sum = 0;
-    for (let i = 1; i <= num; i++) {
-        
-        
+function specialNumbers(num) {
 
-        while (num > 0) {
-            let digit = num % 10
-        sum = parseInt(sum / 10)
-        console.log(digit)
+    for (let i = 1; i <= num; i++) {
+
+        let curNum = i;
+        let curSum = 0;
+        while (curNum > 0) {
+            curSum += curNum % 10;
+            curNum = parseInt(curNum / 10);
+        }
+
+        if (curSum == 5 || curSum == 7 || curSum == 11) {
+            console.log(`${i} -> True`);
+        } else {
+            console.log(`${i} -> False`);
         }
     }
-    
+
 }
+    
 
 
 
