@@ -1,15 +1,21 @@
 function  lastKNumbersSequance (n, k) {
 
-let result = ''
-let resultLength = n
-let startingNum = 1
 
-for(let i = 0; i < n; i++) {
+let arr = [1]
 
-
- let nextNum = startingNum * k;
- console.log(nextNum)
+while (n > arr.length) {
+    let kArr = arr.slice(-k)
+    let sum = 0
+    for (let i = 0; i < kArr.length; i++) {
+        sum += kArr[i]
+    }
+    arr.push(sum)
 }
+
+console.log(arr.join(' '))
+
+    
+
 }
 
 lastKNumbersSequance (6, 3)
